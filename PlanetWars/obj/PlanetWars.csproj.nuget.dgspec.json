@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\1projects\\Exam14August\\1and2\\PlanetWars.csproj": {}
+    "D:\\Github\\Softuni\\PlanetWars\\PlanetWars.csproj": {}
   },
   "projects": {
-    "D:\\1projects\\Exam14August\\1and2\\PlanetWars.csproj": {
+    "D:\\Github\\Softuni\\PlanetWars\\PlanetWars.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\1projects\\Exam14August\\1and2\\PlanetWars.csproj",
+        "projectUniqueName": "D:\\Github\\Softuni\\PlanetWars\\PlanetWars.csproj",
         "projectName": "PlanetWars",
-        "projectPath": "D:\\1projects\\Exam14August\\1and2\\PlanetWars.csproj",
+        "projectPath": "D:\\Github\\Softuni\\PlanetWars\\PlanetWars.csproj",
         "packagesPath": "C:\\Users\\SPEED Computers\\.nuget\\packages\\",
-        "outputPath": "D:\\1projects\\Exam14August\\1and2\\obj\\",
+        "outputPath": "D:\\Github\\Softuni\\PlanetWars\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

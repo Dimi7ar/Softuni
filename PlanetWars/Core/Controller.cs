@@ -234,9 +234,5 @@ namespace PlanetWars.Core
             }
             return sb.ToString().TrimEnd();
         }
-        private virtual void hahaha()
-        {
-            Console.WriteLine("lol");
-        }
     }
 }
