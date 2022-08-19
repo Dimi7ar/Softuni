@@ -1,0 +1,14 @@
+D:\1projects\wpgg\cars\RepairShop\RepairShop\bin\Debug\netcoreapp3.1\RepairShop.exe
+D:\1projects\wpgg\cars\RepairShop\RepairShop\bin\Debug\netcoreapp3.1\RepairShop.deps.json
+D:\1projects\wpgg\cars\RepairShop\RepairShop\bin\Debug\netcoreapp3.1\RepairShop.runtimeconfig.json
+D:\1projects\wpgg\cars\RepairShop\RepairShop\bin\Debug\netcoreapp3.1\RepairShop.runtimeconfig.dev.json
+D:\1projects\wpgg\cars\RepairShop\RepairShop\bin\Debug\netcoreapp3.1\RepairShop.dll
+D:\1projects\wpgg\cars\RepairShop\RepairShop\bin\Debug\netcoreapp3.1\RepairShop.pdb
+D:\1projects\wpgg\cars\RepairShop\RepairShop\obj\Debug\netcoreapp3.1\RepairShop.csproj.AssemblyReference.cache
+D:\1projects\wpgg\cars\RepairShop\RepairShop\obj\Debug\netcoreapp3.1\RepairShop.GeneratedMSBuildEditorConfig.editorconfig
+D:\1projects\wpgg\cars\RepairShop\RepairShop\obj\Debug\netcoreapp3.1\RepairShop.AssemblyInfoInputs.cache
+D:\1projects\wpgg\cars\RepairShop\RepairShop\obj\Debug\netcoreapp3.1\RepairShop.AssemblyInfo.cs
+D:\1projects\wpgg\cars\RepairShop\RepairShop\obj\Debug\netcoreapp3.1\RepairShop.csproj.CoreCompileInputs.cache
+D:\1projects\wpgg\cars\RepairShop\RepairShop\obj\Debug\netcoreapp3.1\RepairShop.dll
+D:\1projects\wpgg\cars\RepairShop\RepairShop\obj\Debug\netcoreapp3.1\RepairShop.pdb
+D:\1projects\wpgg\cars\RepairShop\RepairShop\obj\Debug\netcoreapp3.1\RepairShop.genruntimeconfig.cache

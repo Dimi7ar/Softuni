@@ -1,0 +1,14 @@
+D:\1projects\wpgg\exam2\Formula1\Formula1\bin\Debug\netcoreapp3.1\Formula1.exe
+D:\1projects\wpgg\exam2\Formula1\Formula1\bin\Debug\netcoreapp3.1\Formula1.deps.json
+D:\1projects\wpgg\exam2\Formula1\Formula1\bin\Debug\netcoreapp3.1\Formula1.runtimeconfig.json
+D:\1projects\wpgg\exam2\Formula1\Formula1\bin\Debug\netcoreapp3.1\Formula1.runtimeconfig.dev.json
+D:\1projects\wpgg\exam2\Formula1\Formula1\bin\Debug\netcoreapp3.1\Formula1.dll
+D:\1projects\wpgg\exam2\Formula1\Formula1\bin\Debug\netcoreapp3.1\Formula1.pdb
+D:\1projects\wpgg\exam2\Formula1\Formula1\obj\Debug\netcoreapp3.1\Formula1.csproj.AssemblyReference.cache
+D:\1projects\wpgg\exam2\Formula1\Formula1\obj\Debug\netcoreapp3.1\Formula1.GeneratedMSBuildEditorConfig.editorconfig
+D:\1projects\wpgg\exam2\Formula1\Formula1\obj\Debug\netcoreapp3.1\Formula1.AssemblyInfoInputs.cache
+D:\1projects\wpgg\exam2\Formula1\Formula1\obj\Debug\netcoreapp3.1\Formula1.AssemblyInfo.cs
+D:\1projects\wpgg\exam2\Formula1\Formula1\obj\Debug\netcoreapp3.1\Formula1.csproj.CoreCompileInputs.cache
+D:\1projects\wpgg\exam2\Formula1\Formula1\obj\Debug\netcoreapp3.1\Formula1.dll
+D:\1projects\wpgg\exam2\Formula1\Formula1\obj\Debug\netcoreapp3.1\Formula1.pdb
+D:\1projects\wpgg\exam2\Formula1\Formula1\obj\Debug\netcoreapp3.1\Formula1.genruntimeconfig.cache
