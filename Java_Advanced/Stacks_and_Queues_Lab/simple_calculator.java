@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import javax.print.DocFlavor.STRING;
 
-public class Main {
+public class simple_calculator {
     public static void main(String[] args) {
       Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();

@@ -1,10 +1,8 @@
-import java.io.Console;
 import java.util.ArrayDeque;
 import java.util.Scanner;
 
-import javax.print.DocFlavor.STRING;
 
-public class Main {
+public class matching_brackets {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();
@@ -23,5 +21,6 @@ public class Main {
                System.out.println(input.substring(startIndex, i+1));
             }
         }
+        scanner.close();
     }
 }
