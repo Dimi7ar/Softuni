@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "yXYvMPrx1HYw4TXGan4fHV3ksHz4k8nWZKb8d9VH+ozgqzWlBf98uq02wv41a5N4FldTya30c/+eUQiP2HMX/A==",
+  "success": true,
+  "projectFilePath": "D:\\1projects\\MidExam\\01.TheBiscuitFactory\\01.TheBiscuitFactory.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\SPEED Computers\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512"
+  ],
+  "logs": []
+}
