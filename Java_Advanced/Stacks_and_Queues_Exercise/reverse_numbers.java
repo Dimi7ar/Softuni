@@ -1,8 +1,6 @@
-import java.io.Console;
 import java.util.ArrayDeque;
 import java.util.Scanner;
 
-import javax.print.DocFlavor.STRING;
 
 public class reverse_numbers {
     public static void main(String[] args) {
@@ -20,7 +18,7 @@ public class reverse_numbers {
         {
             result = result + " " + deque.pop();
         }
-        
+
         System.out.println(result);
         scanner.close();
     }

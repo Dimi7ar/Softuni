@@ -1,8 +1,6 @@
-import java.io.Console;
 import java.util.ArrayDeque;
 import java.util.Scanner;
 
-import javax.print.DocFlavor.STRING;
 
 public class simple_calculator {
     public static void main(String[] args) {
@@ -10,6 +8,7 @@ public class simple_calculator {
         String input = scanner.nextLine();
         String[] inputArray = input.split("\\s");
         ArrayDeque<String> stack = new ArrayDeque<String>();
+
         for (Integer i = 0; i < inputArray.length; i++) {
             stack.add(inputArray[i]);
         }
@@ -21,6 +20,7 @@ public class simple_calculator {
                 result -= Integer.parseInt(stack.pop());
             }
         }
+
         System.out.println(result);
         scanner.close();
     }
