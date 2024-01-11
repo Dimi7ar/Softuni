@@ -1,7 +1,6 @@
 import java.util.ArrayDeque;
 import java.util.Scanner;
 
-
 public class reverse_numbers {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -10,12 +9,10 @@ public class reverse_numbers {
         ArrayDeque<String> deque = new ArrayDeque<String>();
         String result = "";
 
-        for (int i = 0; i < input.length; i++)
-        {
+        for (int i = 0; i < input.length; i++) {
             deque.push(input[i]);
         }
-        while(!deque.isEmpty())
-        {
+        while (!deque.isEmpty()) {
             result = result + " " + deque.pop();
         }
 
