@@ -9,17 +9,16 @@ public class maximum_element {
         for (int i = 0; i < n; i++) {
             String[] input = scanner.nextLine().split("\\s");
             int command = Integer.valueOf(input[0]);
-            switch (command)
-            {
+            switch (command) {
                 case 1:
-                deque.push(Integer.valueOf(input[1]));
-                break;
+                    deque.push(Integer.valueOf(input[1]));
+                    break;
                 case 2:
-                deque.pop();
-                break;
+                    deque.pop();
+                    break;
                 case 3:
-                System.out.println(deque.stream().max(Integer::compareTo).get());
-                break;
+                    System.out.println(deque.stream().max(Integer::compareTo).get());
+                    break;
             }
         }
         scanner.close();
