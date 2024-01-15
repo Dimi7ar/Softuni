@@ -16,13 +16,13 @@ public class matrix_of_palindromes {
     public static void fillMatrix(String[][] matrix) {
         int token = 97;
         for (int r = 0; r < matrix.length; r++) {
-            for (int c = 0; c < matrix[r].length; c++)
-            {
-                matrix[r][c] = "" + (char)(token + r) + (char)(token + r + c) + (char)(token + r);
+            for (int c = 0; c < matrix[r].length; c++) {
+                matrix[r][c] = "" + (char) (token + r) + (char) (token + r + c) + (char) (token + r);
             }
         }
 
     }
+
     public static void printMultiDimensionalArray(String[][] matrix) {
         for (int r = 0; r < matrix.length; r++) {
             StringBuilder sb = new StringBuilder();
