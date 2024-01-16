@@ -1,11 +1,11 @@
-import java.util.LinkedHashSet;
+import java.util.TreeSet;
 import java.util.Scanner;
 
 public class softuni_party {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();
-        LinkedHashSet<String> set = new LinkedHashSet<>();
+        TreeSet<String> set = new TreeSet<String>();
         while (!input.equals("PARTY")) {
             set.add(input);
             input = scanner.nextLine();
@@ -15,20 +15,10 @@ public class softuni_party {
             set.remove(input);
             input = scanner.nextLine();
         }
-        for (String guest : set)
-            if (isVip(guest))
-            {
-                System.out.println(guest);
-                set.remove(guest);
-            }
-
-        for (String guest : set)
+        System.out.println(set.size());
+        for (String guest : set) {
             System.out.println(guest);
-
+        }
         scanner.close();
-    }
-
-    public static boolean isVip(String guest) {
-        return Character.isDigit(guest.charAt(0));
     }
 }
