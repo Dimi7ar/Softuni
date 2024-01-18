@@ -10,19 +10,14 @@ public class sets_of_elements {
         int[] n = Arrays.stream(scanner.nextLine().split("\\s+")).mapToInt(Integer::parseInt).toArray();
         LinkedHashSet<Integer> set1 = new LinkedHashSet<>();
         LinkedHashSet<Integer> set2 = new LinkedHashSet<>();
-        for (int i = 1; i <= n[0] + n[1]; i++) 
-        {
+        for (int i = 1; i <= n[0] + n[1]; i++) {
             int currNum = Integer.parseInt(scanner.nextLine());
-             if(i <= n[0])
-             set1.add(currNum);
-             else
-             set2.add(currNum);
+            if (i <= n[0])
+                set1.add(currNum);
+            else
+                set2.add(currNum);
         }
-        for (int num : set1)
-        {
-            if(set2.contains(num))
-            System.out.printf("%d ", num);
-        }
+        set1.stream().filter(set2::contains).forEach(elem -> System.out.print(elem + " "));
         scanner.close();
     }
 }

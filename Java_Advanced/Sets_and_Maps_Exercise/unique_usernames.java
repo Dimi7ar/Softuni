@@ -9,7 +9,7 @@ public class unique_usernames {
         Scanner scanner = new Scanner(System.in);
         int n = Integer.parseInt(scanner.nextLine());
         LinkedHashSet<String> set = new LinkedHashSet<>();
-        for (int i = 0; i < n; i++) 
+        for (int i = 0; i < n; i++)
             set.add(scanner.nextLine());
         Arrays.stream(set.toArray());
         scanner.close();
