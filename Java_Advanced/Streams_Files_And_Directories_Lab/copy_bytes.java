@@ -1,8 +1,6 @@
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.util.HashSet;
-import java.util.List;
 
 public class copy_bytes {
     public static void main(String[] args) throws IOException {
