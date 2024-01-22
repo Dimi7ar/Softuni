@@ -5,7 +5,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-public class sum_bytes {
+public class all_capitals {
     public static void main(String[] args) throws IOException {
         String root = System.getProperty("user.dir");
 
