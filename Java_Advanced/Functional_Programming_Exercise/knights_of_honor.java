@@ -9,5 +9,6 @@ public class knights_of_honor {
         Scanner scanner = new Scanner(System.in);
         Consumer<String> printName = n -> System.out.println("Sir " + n);
         Arrays.stream(scanner.nextLine().split("\\s+")).forEach(printName);
+        scanner.close();
     }   
 }

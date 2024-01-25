@@ -13,5 +13,6 @@ public class sort_even_numbers {
         System.out.println(numbers.toString().replaceAll("\\[|]", ""));
         Collections.sort(numbers);
         System.out.println(numbers.toString().replaceAll("\\[|]", ""));
+        scanner.close();
     }   
 }

@@ -1,7 +1,6 @@
 package Functional_Programming_Exercise;
 
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 import java.util.function.Predicate;

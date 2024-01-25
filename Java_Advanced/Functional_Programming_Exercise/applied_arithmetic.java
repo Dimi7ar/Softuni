@@ -39,5 +39,6 @@ public class applied_arithmetic {
             }
             input = scanner.nextLine();
         }
+        scanner.close();
     }
 }

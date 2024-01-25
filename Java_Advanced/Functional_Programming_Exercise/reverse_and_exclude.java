@@ -17,5 +17,6 @@ public class reverse_and_exclude {
         Collections.reverse(listInput);
         listInput.removeIf(isDivisible);
         listInput.stream().forEach(e -> System.out.print(e + " "));
+        scanner.close();
     }
 }

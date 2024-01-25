@@ -1,5 +1,3 @@
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -24,6 +22,7 @@ public class extract_integers {
                 }
                 scanner.next();
             }
+            scanner.close();
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }

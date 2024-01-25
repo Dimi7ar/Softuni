@@ -9,5 +9,6 @@ public class consumer_print {
         Scanner scanner = new Scanner(System.in);
         Consumer<String> printName = n -> System.out.println(n);
         Arrays.stream(scanner.nextLine().split("\\s+")).forEach(printName);
+        scanner.close();
     }   
 }
