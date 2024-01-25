@@ -34,6 +34,7 @@ public class word_count {
             map.keySet().forEach(key -> {
                 printWriter.write(String.format("%s - %d%n", key, map.get(key)));
             });
+            textScanner.close();
 
         } catch (IOException e) {
             e.printStackTrace();
