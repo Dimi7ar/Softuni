@@ -21,6 +21,34 @@ public class main {
 
         String targetName = target.getName();
         String targetBirth = target.getBirth();
+        boolean flag = true;
+
+        // combine data
+        while (flag) {
+            boolean internalFlag = false;
+            for (Person person : list) {
+                for (Person secondPerson : list) {
+                    if (!person.equals(secondPerson)) {
+                        if ((person.getName().equals(secondPerson.getName()) && !person.getName().isBlank())
+                                || (person.getBirth().equals(secondPerson.getBirth()) && !person.getBirth().isBlank())) {
+                            if (!secondPerson.getName().isBlank())
+                                person.setName(secondPerson.getName());
+                            if (!secondPerson.getBirth().isBlank())
+                                person.setBirth(secondPerson.getBirth());
+                            person.getParents().addAll(secondPerson.getParents());
+                            person.getChildren().addAll(secondPerson.getChildren());
+                            list.remove(secondPerson);
+                            internalFlag = true;
+                            break;
+                        }
+                    }
+                }
+                if(internalFlag)
+                break;
+            }
+            if(!internalFlag)
+            flag = false;
+        }
 
         // get parents
         for (Person person : list) {
@@ -48,38 +76,79 @@ public class main {
     }
 
     public static void addPerson(int command, List<Person> list, String[] input) {
+        String firstPersonArgs, secondPersonArgs;
+        boolean containsFirst, containsSecond;
+
         switch (command) {
             case 1:
-                String caseOneFirstPersonName = input[0] + " " + input[1];
+                firstPersonArgs = input[0] + " " + input[1];
+                secondPersonArgs = input[3] + " " + input[4];
+                containsFirst = list.stream().anyMatch(e -> e.getName().equals(firstPersonArgs));
+                containsSecond = list.stream().anyMatch(e -> e.getName().equals(secondPersonArgs));
+                if (!containsFirst)
+                    list.add(new Person(firstPersonArgs));
+                if (!containsSecond)
+                    list.add(new Person(secondPersonArgs));
 
+                Person firstPersonCaseOne = list.stream().filter(e -> e.getName().equals(firstPersonArgs))
+                        .findFirst().get();
+                Person secondPersonCaseOne = list.stream().filter(e -> e.getName().equals(secondPersonArgs))
+                        .findFirst().get();
+
+                firstPersonCaseOne.getChildren().add(secondPersonCaseOne);
+                secondPersonCaseOne.getParents().add(firstPersonCaseOne);
                 break;
             case 2:
-                Person firstPersonCaseTwo = new Person(input[0] + " " + input[1]);
-                Person secondPersonCaseTwo = new Person(input[3]);
-                if (!list.stream().anyMatch(e -> e.getName().equals(firstPersonCaseTwo.getName())))
-                    list.add(firstPersonCaseTwo);
-                if (!list.stream().anyMatch(e -> e.getBirth().equals(secondPersonCaseTwo.getBirth())))
-                    list.add(secondPersonCaseTwo);
+                firstPersonArgs = input[0] + " " + input[1];
+                secondPersonArgs = input[3];
+                containsFirst = list.stream().anyMatch(e -> e.getName().equals(firstPersonArgs));
+                containsSecond = list.stream().anyMatch(e -> e.getBirth().equals(secondPersonArgs));
+                if (!containsFirst)
+                    list.add(new Person(firstPersonArgs));
+                if (!containsSecond)
+                    list.add(new Person(secondPersonArgs));
+
+                Person firstPersonCaseTwo = list.stream().filter(e -> e.getName().equals(firstPersonArgs))
+                        .findFirst().get();
+                Person secondPersonCaseTwo = list.stream().filter(e -> e.getBirth().equals(secondPersonArgs))
+                        .findFirst().get();
+
                 firstPersonCaseTwo.getChildren().add(secondPersonCaseTwo);
                 secondPersonCaseTwo.getParents().add(firstPersonCaseTwo);
                 break;
             case 3:
-                Person firstPersonCaseThree = new Person(input[0]);
-                Person secondPersonCaseThree = new Person(input[2] + " " + input[3]);
-                if (!list.stream().anyMatch(e -> e.getBirth().equals(firstPersonCaseThree.getBirth())))
-                    list.add(firstPersonCaseThree);
-                if (!list.stream().anyMatch(e -> e.getName().equals(secondPersonCaseThree.getName())))
-                    list.add(secondPersonCaseThree);
+                firstPersonArgs = input[0];
+                secondPersonArgs = input[2] + " " + input[3];
+                containsFirst = list.stream().anyMatch(e -> e.getBirth().equals(firstPersonArgs));
+                containsSecond = list.stream().anyMatch(e -> e.getName().equals(secondPersonArgs));
+                if (!containsFirst)
+                    list.add(new Person(firstPersonArgs));
+                if (!containsSecond)
+                    list.add(new Person(secondPersonArgs));
+
+                Person firstPersonCaseThree = list.stream().filter(e -> e.getBirth().equals(firstPersonArgs))
+                        .findFirst().get();
+                Person secondPersonCaseThree = list.stream().filter(e -> e.getName().equals(secondPersonArgs))
+                        .findFirst().get();
+
                 firstPersonCaseThree.getChildren().add(secondPersonCaseThree);
                 secondPersonCaseThree.getParents().add(firstPersonCaseThree);
                 break;
             case 4:
-                Person firstPersonCaseFour = new Person(input[0]);
-                Person secondPersonCaseFour = new Person(input[2]);
-                if (!list.stream().anyMatch(e -> e.getBirth().equals(firstPersonCaseFour.getBirth())))
-                    list.add(firstPersonCaseFour);
-                if (!list.stream().anyMatch(e -> e.getBirth().equals(secondPersonCaseFour.getBirth())))
-                    list.add(secondPersonCaseFour);
+                firstPersonArgs = input[0];
+                secondPersonArgs = input[2];
+                containsFirst = list.stream().anyMatch(e -> e.getBirth().equals(firstPersonArgs));
+                containsSecond = list.stream().anyMatch(e -> e.getBirth().equals(secondPersonArgs));
+                if (!containsFirst)
+                    list.add(new Person(firstPersonArgs));
+                if (!containsSecond)
+                    list.add(new Person(secondPersonArgs));
+
+                Person firstPersonCaseFour = list.stream().filter(e -> e.getBirth().equals(firstPersonArgs))
+                        .findFirst().get();
+                Person secondPersonCaseFour = list.stream().filter(e -> e.getBirth().equals(secondPersonArgs))
+                        .findFirst().get();
+
                 firstPersonCaseFour.getChildren().add(secondPersonCaseFour);
                 secondPersonCaseFour.getParents().add(firstPersonCaseFour);
                 break;
